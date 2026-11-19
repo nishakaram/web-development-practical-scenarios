@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Practical Scenarios</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f5f9;
+      color: #222;
+    }
+    header { text-align: center; padding: 40px 16px 10px; }
+    header h1 { margin: 0 0 8px; color: #1f3a5f; }
+    header p { margin: 0; color: #555; }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 30px 16px;
+    }
+    .card {
+      display: block;
+      width: 320px;
+      padding: 28px 24px;
+      background: #fff;
+      border: 1px solid #d5dce6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+    }
+    .card:hover, .card:focus { border-color: #1f3a5f; box-shadow: 0 4px 12px rgba(31,58,95,.15); }
+    .card h2 { margin: 0 0 8px; color: #1f3a5f; font-size: 20px; }
+    .card p { margin: 0 0 12px; color: #555; line-height: 1.5; }
+    .card .concepts { font-size: 13px; color: #777; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Web Development Practical Scenarios</h1>
+    <p>Choose a scenario to open it.</p>
+  </header>
+
+  <main class="cards">
+    <a class="card" href="student-result/index.html">
+      <h2>Scenario 3: Student Result Card</h2>
+      <p>Calculates total, percentage, grade and pass/fail for five students with one click.</p>
+      <span class="concepts">Arrays of objects, functions, loops, conditions</span>
+    </a>
+
+    <a class="card" href="password-strength/index.html">
+      <h2>Scenario 4: Password Strength Meter</h2>
+      <p>Gives live feedback on password strength while the user types.</p>
+      <span class="concepts">Input event, regular expressions, style changes, checkbox</span>
+    </a>
+  </main>
+</body>
+</html>

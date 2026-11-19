@@ -1,0 +1,70 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f5f9;
+  color: #222;
+}
+
+.container {
+  max-width: 440px;
+  margin: 40px auto;
+  padding: 24px 20px;
+  background: #ffffff;
+  border: 1px solid #d5dce6;
+  border-radius: 8px;
+}
+
+h1 { text-align: center; color: #1f3a5f; margin-top: 0; }
+
+#passwordInput {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #9aa7b8;
+  border-radius: 5px;
+}
+#passwordInput:focus { outline: none; border-color: #1f3a5f; }
+
+.show-password {
+  display: block;
+  margin: 10px 0 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Grey track of the strength bar */
+.bar-background {
+  width: 100%;
+  height: 12px;
+  background: #e0e4ea;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Coloured part of the bar. JavaScript changes width and background */
+.bar-fill {
+  width: 0;
+  height: 100%;
+  background: #e0e4ea;
+  transition: width 0.25s, background 0.25s;
+}
+
+.strength-label {
+  min-height: 24px;      /* keeps the layout steady when the label is empty */
+  margin: 8px 0 14px;
+  font-weight: bold;
+}
+
+.rules { list-style: none; padding: 0; margin: 0; }
+
+.rules li {
+  margin: 8px 0;
+  color: #8a8f98;        /* grey = rule not satisfied */
+}
+
+.rules .tick { display: inline-block; width: 20px; font-weight: bold; }
+
+/* Added by JavaScript when a rule is satisfied */
+.rules li.valid { color: #2e7d32; }  /* green tick and text */

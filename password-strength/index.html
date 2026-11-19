@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Strength Meter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Strength</h1>
+
+    <input type="password" id="passwordInput" placeholder="Enter your password" autocomplete="off">
+
+    <label class="show-password">
+      <input type="checkbox" id="showPassword"> Show password
+    </label>
+
+    <!-- Strength bar: the inner div's width and colour change with the score -->
+    <div class="bar-background">
+      <div id="strengthBar" class="bar-fill"></div>
+    </div>
+    <p id="strengthLabel" class="strength-label"></p>
+
+    <ul class="rules">
+      <li id="ruleLength"><span class="tick">&#10003;</span> At least 8 characters</li>
+      <li id="ruleUpper"><span class="tick">&#10003;</span> One uppercase letter</li>
+      <li id="ruleLower"><span class="tick">&#10003;</span> One lowercase letter</li>
+      <li id="ruleNumber"><span class="tick">&#10003;</span> One number</li>
+      <li id="ruleSymbol"><span class="tick">&#10003;</span> One special symbol (!@#$%...)</li>
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
